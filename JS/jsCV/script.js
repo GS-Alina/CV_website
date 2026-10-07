@@ -49,6 +49,9 @@ const modalData = {
 
     <h3>Courses</h3>
     </br>
+    <p><strong>Introduction to Python</strong><br>Chalmers University of Technology</p>
+    <p>Studied fundamentals of Python and algorithms.</p>
+
     <p><strong>Introduction to Machine Learning</strong><br>Mälardalen University</p>
     <p>Studied fundamentals of machine learning as well as basic concepts of data manipulation and processing, mathematics, statistics and probability insofar they are related to machine learning.</p>
 
@@ -61,6 +64,25 @@ const modalData = {
   experience: `
     <h3>Experience</h3>
     </br>
+    <p>
+      <strong>AI Developer & Data Scientist – Internship</strong><br>
+      Göteborgs Spårvägar, Gothenburg, Sweden<br>
+      Oct 2026 – Nov 2026
+    </p>
+
+    <p>
+      Working with telemetry data from trams to build predictive
+      machine learning models. The goal is to identify patterns
+      that can help predict when tram doors may fail.
+    </p>
+
+    <p>
+      <strong>Epidemiologist – Full-time</strong><br>
+      The Centre for Disease Prevention and Control of Latvia,
+      Riga, Latvia<br>
+      Apr 2020 – Jul 2021
+    </p>
+
     <p><strong>Epidemiologist (2020 apr - 2021 jul)</strong><br>Centre for Disease Prevention and Control of Latvia</p>
     <ul>
         <li>Organised preventive and anti-epidemic measures to stop infectious disease transmission.</li>
@@ -77,11 +99,10 @@ const modalData = {
     <h3>Skills & Tools</h3>
     </br>
     <ul>
-      <li><strong>Technical Proficiencies:</strong> Stata, SPSS, GitHub, MongoDB, Power BI, Azure, AWS</li>
-      <li><strong>Hard Skills:</strong> C# (.NET, WPF, EF Core), SQL, Python (PySide6, Pandas, LangGraph, PyTorch), R,
-      CSS/HTML/JS (React)</li>
+      <li><strong>Technical Proficiencies:</strong> Azure, AWS, Docker, MongoDB, Azure DevOps, Git, Stata, Power BI</li>
+      <li><strong>Hard Skills:</strong> C# (.NET, WPF, EF Core), SQL, Python (PySide6, Pandas, LangGraph), CSS/HTML/JS (React), R</li>
       <li><strong>Soft Skills:</strong> Leadership, Communication, Creative & Analytical Skills, Flexibility, Problem Solving</li>
-      <li><strong>Languages:</strong> English (Advanced), Swedish (Plus Intermediate), Latvian (Native), Russian (Native)</li>
+      <li><strong>Languages:</strong> English (Advanced), Swedish (Advanced), Latvian (Native), Russian (Native)</li>
     </ul>
   `
 };
@@ -113,6 +134,11 @@ function closeModal() {
 
 // Footer year update
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Age update
+const birthYear = 1997;
+document.getElementById("age").textContent =
+  new Date().getFullYear() - birthYear;
 
 // Mobile menu toggle
 document.addEventListener("DOMContentLoaded", () => {
